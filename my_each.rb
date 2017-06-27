@@ -1,3 +1,8 @@
-def my_each # put argument(s) here
-  # code here
+def my_each(words)
+  index = 0
+  while words[index] != nil
+    yield words[index]
+    index += 1 
+  end
+  words
 end
